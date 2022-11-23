@@ -13,6 +13,8 @@ public class Employee {
 
     private String firstName;
     private String lastName;
+    // Thymeleaf accepts yyyy-MM-dd which is different from LocalDate
+    // so we should put here pattern
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate birthday;
     private String email;
